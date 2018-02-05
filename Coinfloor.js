@@ -60,13 +60,13 @@
 				}
 			});
 
-			ws.on('close', = function(code, reason) {
+			ws.on('close', function(code, reason) {
 				if (onClose) {
 					onClose(code, reason);
 				}
 			});
 
-			ws.on('error', = function(error, code) {
+			ws.on('error', function(error, code) {
 				if (onError) {
 					onError(error, code);
 				}
